@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Display Book Page</title>
+<meta charset="utf-8" />
+<!-- PUT THIS IN A CSS FILE: CSS style to remove indentation 
+from list of items -->
+<style> 
+    ul { list-style:none; padding-left:0; } 
+</style> 
+</head>
+<body>
+<ul id="books-ul">
+  <% books.forEach( (book) => { %>
+    <li><%= book.Title %>
+          &nbsp;<%= book.Author %>
+          &nbsp;<%= book.Price %>
+     </li> 
+  <% }); %>
+</ul>
+<script src=“…/jquery-3.5.1.js"></script> 
+</body>
+</html>
